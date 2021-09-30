@@ -144,16 +144,16 @@ public class GameGUI implements ActionListener {
             // Checks final game status to see who won
             switch(this.blackjack.checkGameStatus()) {
                 case 1:
-                    this.statusText.setText("Status: You beat the dealer!     Press \"New Game\" to play again.");
+                    this.statusText.setText("Status: You beat the dealer!");
                     break;
                 case -1:
-                    this.statusText.setText("Status: You lost to the dealer. Better luck next time!     Press \"New Game\" to play again.");
+                    this.statusText.setText("Status: You lost to the dealer. Better luck next time!");
                     break;
                 case 0:
-                    this.statusText.setText(("Status: You tied with the dealer!     Press \"New Game\" to play again."));
+                    this.statusText.setText(("Status: You tied with the dealer!"));
                     break;
                 case -2:
-                    this.statusText.setText("Status: Dealer busted, Player wins.     Press \"New Game\" to play again.");
+                    this.statusText.setText("Status: Dealer busted, Player wins.");
                     break;
             }
         } else if(event.getSource() == quitButton) {                                                            // quit the game by disposing of the Frame and all components
